@@ -1,0 +1,247 @@
+IN (India) | data length: 326816
+CN (China) | data length: 289026
+PK (Pakistan) | data length: 113337
+US (United States) | data length: 109795
+MX (Mexico) | data length: 108425
+RU (Russian Federation) | data length: 103927
+DE (Germany) | data length: 61359
+IR (Iran, Islamic Republic of) | data length: 58039
+FR (France) | data length: 53388
+NP (Nepal) | data length: 51934
+YE (Yemen) | data length: 49634
+IT (Italy) | data length: 49461
+NG (Nigeria) | data length: 44195
+TH (Thailand) | data length: 42419
+ID (Indonesia) | data length: 41343
+MA (Morocco) | data length: 38877
+KR (Korea, Republic of) | data length: 36402
+BD (Bangladesh) | data length: 33489
+PL (Poland) | data length: 32759
+JP (Japan) | data length: 32530
+BR (Brazil) | data length: 31591
+MM (Myanmar) | data length: 31173
+PH (Philippines) | data length: 29614
+PE (Peru) | data length: 28863
+TR (Turkey) | data length: 27688
+CD (Congo, the Democratic Republic of the) | data length: 26516
+ES (Spain) | data length: 25740
+VN (Viet Nam) | data length: 25584
+AF (Afghanistan) | data length: 24477
+UA (Ukraine) | data length: 22195
+IQ (Iraq) | data length: 21164
+SE (Sweden) | data length: 21149
+KP (Korea, Democratic People’s Republic of) | data length: 18713
+CA (Canada) | data length: 18602
+MZ (Mozambique) | data length: 17573
+AU (Australia) | data length: 17488
+BY (Belarus) | data length: 17151
+GB (United Kingdom) | data length: 17007
+MY (Malaysia) | data length: 16894
+AT (Austria) | data length: 15627
+CO (Colombia) | data length: 15342
+LT (Lithuania) | data length: 14844
+LK (Sri Lanka) | data length: 14582
+HU (Hungary) | data length: 13356
+RO (Romania) | data length: 13138
+GH (Ghana) | data length: 12900
+MG (Madagascar) | data length: 12663
+BA (Bosnia and Herzegovina) | data length: 12624
+AO (Angola) | data length: 12549
+ML (Mali) | data length: 12352
+VE (Venezuela, Bolivarian Republic of) | data length: 12022
+BO (Bolivia, Plurinational State Of) | data length: 12011
+CZ (Czechia) | data length: 11531
+CM (Cameroon) | data length: 11503
+FI (Finland) | data length: 11231
+NE (Niger) | data length: 11174
+GT (Guatemala) | data length: 11085
+ZA (South Africa) | data length: 11070
+GR (Greece) | data length: 11045
+PT (Portugal) | data length: 11000
+BE (Belgium) | data length: 10994
+CH (Switzerland) | data length: 10720
+NO (Norway) | data length: 10619
+PG (Papua New Guinea) | data length: 10596
+LA (Lao People’s Democratic Republic) | data length: 10545
+IE (Ireland) | data length: 10216
+ZM (Zambia) | data length: 10153
+SY (Syrian Arab Republic) | data length: 10141
+TW (Taiwan) | data length: 10008
+TD (Chad) | data length: 9784
+CI (Cote d’Ivoire) | data length: 9637
+ET (Ethiopia) | data length: 8955
+UG (Uganda) | data length: 8941
+KZ (Kazakhstan) | data length: 8866
+KH (Cambodia) | data length: 8602
+SN (Senegal) | data length: 8360
+HR (Croatia) | data length: 8299
+BF (Burkina Faso) | data length: 8023
+SL (Sierra Leone) | data length: 7927
+HT (Haiti) | data length: 7889
+PA (Panama) | data length: 7727
+DZ (Algeria) | data length: 7636
+CU (Cuba) | data length: 7478
+RS (Serbia) | data length: 7199
+NL (Netherlands) | data length: 6952
+SD (Sudan) | data length: 6726
+TZ (Tanzania, United Republic of) | data length: 6574
+MW (Malawi) | data length: 6546
+KE (Kenya) | data length: 6139
+BG (Bulgaria) | data length: 6040
+HN (Honduras) | data length: 5894
+UZ (Uzbekistan) | data length: 5870
+DK (Denmark) | data length: 5822
+AR (Argentina) | data length: 5798
+LR (Liberia) | data length: 5775
+SI (Slovenia) | data length: 5677
+GN (Guinea) | data length: 5638
+EC (Ecuador) | data length: 5492
+EE (Estonia) | data length: 5432
+RW (Rwanda) | data length: 5214
+OM (Oman) | data length: 5096
+GE (Georgia) | data length: 4926
+CL (Chile) | data length: 4895
+DO (Dominican Republic) | data length: 4843
+CF (Central African Republic) | data length: 4825
+PY (Paraguay) | data length: 4757
+SK (Slovakia) | data length: 4608
+SS (South Sudan) | data length: 4576
+CG (Congo) | data length: 4543
+AZ (Azerbaijan) | data length: 4486
+EG (Egypt) | data length: 4174
+SO (Somalia) | data length: 4074
+AL (Albania) | data length: 3813
+TG (Togo) | data length: 3809
+BI (Burundi) | data length: 3686
+LV (Latvia) | data length: 3671
+BJ (Benin) | data length: 3518
+GW (Guinea-Bissau) | data length: 3484
+SV (El Salvador) | data length: 3390
+LB (Lebanon) | data length: 3292
+ME (Montenegro) | data length: 3291
+GA (Gabon) | data length: 3285
+TL (Timor-Leste) | data length: 3153
+SA (Saudi Arabia) | data length: 3021
+SB (Solomon Islands) | data length: 2904
+NZ (New Zealand) | data length: 2893
+AM (Armenia) | data length: 2728
+TJ (Tajikistan) | data length: 2455
+MK (Macedonia, the former Yugoslav Republic of) | data length: 2389
+PR (Puerto Rico) | data length: 2200
+TN (Tunisia) | data length: 2099
+NI (Nicaragua) | data length: 2055
+ZW (Zimbabwe) | data length: 2007
+KG (Kyrgyzstan) | data length: 1996
+FJ (Fiji) | data length: 1967
+NA (Namibia) | data length: 1937
+VU (Vanuatu) | data length: 1884
+GM (Gambia) | data length: 1777
+IL (Israel) | data length: 1759
+JM (Jamaica) | data length: 1710
+BW (Botswana) | data length: 1697
+CR (Costa Rica) | data length: 1609
+MD (Moldova, Republic of) | data length: 1587
+JO (Jordan) | data length: 1574
+MN (Mongolia) | data length: 1343
+ER (Eritrea) | data length: 1324
+GP (Guadeloupe) | data length: 1323
+GQ (Equatorial Guinea) | data length: 1234
+TM (Turkmenistan) | data length: 1220
+MQ (Martinique) | data length: 1129
+HK (Hong Kong) | data length: 1069
+PS (Palestine, State of) | data length: 1041
+MR (Mauritania) | data length: 1021
+UY (Uruguay) | data length: 975
+LY (Libya) | data length: 866
+CY (Cyprus) | data length: 739
+RE (Reunion) | data length: 703
+GF (French Guiana) | data length: 697
+NC (New Caledonia) | data length: 696
+LU (Luxembourg) | data length: 668
+AE (United Arab Emirates) | data length: 619
+BB (Barbados) | data length: 548
+GY (Guyana) | data length: 526
+MU (Mauritius) | data length: 522
+SR (Suriname) | data length: 512
+FM (Micronesia, Federated States of) | data length: 438
+TT (Trinidad and Tobago) | data length: 430
+BZ (Belize) | data length: 423
+PF (French Polynesia) | data length: 395
+WS (Samoa) | data length: 382
+LS (Lesotho) | data length: 379
+KM (Comoros) | data length: 364
+SG (Singapore) | data length: 356
+LI (Liechtenstein) | data length: 335
+AX (Aland Islands) | data length: 328
+BS (Bahamas) | data length: 323
+LC (Saint Lucia) | data length: 321
+CV (Cabo Verde) | data length: 315
+MT (Malta) | data length: 280
+QA (Qatar) | data length: 259
+GD (Grenada) | data length: 258
+GG (Guernsey) | data length: 251
+BT (Bhutan) | data length: 240
+ST (Sao Tome and Principe) | data length: 224
+VI (Virgin Islands, U.S.) | data length: 223
+BN (Brunei Darussalam) | data length: 215
+KI (Kiribati) | data length: 183
+AG (Antigua and Barbuda) | data length: 181
+FO (Faroe Islands) | data length: 177
+AW (Aruba) | data length: 168
+GU (Guam) | data length: 146
+YT (Mayotte) | data length: 144
+VG (Virgin Islands, British) | data length: 141
+TO (Tonga) | data length: 137
+GL (Greenland) | data length: 137
+DM (Dominica) | data length: 131
+AS (American Samoa) | data length: 121
+KN (Saint Kitts and Nevis) | data length: 120
+KW (Kuwait) | data length: 119
+BH (Bahrain) | data length: 113
+SZ (Swaziland) | data length: 110
+IS (Iceland) | data length: 109
+MV (Maldives) | data length: 106
+WF (Wallis and Futuna) | data length: 97
+CW (Curacao) | data length: 96
+MH (Marshall Islands) | data length: 93
+VC (Saint Vincent and the Grenadines) | data length: 89
+JE (Jersey) | data length: 84
+PW (Palau) | data length: 82
+BQ (Bonaire, Sint Eustatius and Saba) | data length: 80
+MS (Montserrat) | data length: 78
+AD (Andorra) | data length: 68
+KY (Cayman Islands) | data length: 67
+DJ (Djibouti) | data length: 65
+MF (Saint Martin) | data length: 60
+SX (Sint Maarten) | data length: 59
+FK (Falkland Islands (Malvinas)) | data length: 56
+NU (Niue) | data length: 46
+AI (Anguilla) | data length: 44
+TC (Turks and Caicos Islands) | data length: 43
+IM (Isle of Man) | data length: 43
+MP (Northern Mariana Islands) | data length: 41
+SC (Seychelles) | data length: 40
+CK (Cook Islands) | data length: 33
+BL (Saint Barthelemy) | data length: 28
+TV (Tuvalu) | data length: 25
+SM (San Marino) | data length: 25
+BM (Bermuda) | data length: 23
+NR (Nauru) | data length: 15
+EH (Western Sahara) | data length: 15
+UM (United States Minor Outlying Islands) | data length: 14
+SH (Saint Helena, Ascension and Tristan da Cunha) | data length: 13
+SJ (Svalbard and Jan Mayen) | data length: 10
+MC (Monaco) | data length: 8
+MO (Macao) | data length: 7
+CX (Christmas Island) | data length: 7
+IO (British Indian Ocean Territory) | data length: 6
+TK (Tokelau) | data length: 5
+PM (Saint Pierre and Miquelon) | data length: 5
+NF (Norfolk Island) | data length: 4
+GI (Gibraltar) | data length: 4
+AQ (Antarctica) | data length: 3
+TF (French Southern Territories) | data length: 2
+PN (Pitcairn) | data length: 2
+GS (South Georgia and the South Sandwich Islands) | data length: 2
+CC (Cocos (Keeling) Islands) | data length: 2
+VA (Holy See) | data length: 1
