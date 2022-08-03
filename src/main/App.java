@@ -24,8 +24,8 @@ public class App extends JFrame {
     private CommandLineMain funcs = new CommandLineMain();
     private int width;
     private int height;
-    private ListObj lstPossible;
-    private ListObj lstSelected;
+    private ListObj<String> lstPossible;
+    private ListObj<String> lstSelected;
     private TextField txtCityNum;
     private TextArea txaOutput;
 

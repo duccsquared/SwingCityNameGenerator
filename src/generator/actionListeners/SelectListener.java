@@ -14,8 +14,8 @@ public class SelectListener implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        ListObj lstPossible = app.getLstPossible();
-        ListObj lstSelected = app.getLstSelected();
+        ListObj<String> lstPossible = app.getLstPossible();
+        ListObj<String> lstSelected = app.getLstSelected();
         if(lstPossible.isSelected()) {
             String item = lstPossible.getSelected();
             lstPossible.remove(item);

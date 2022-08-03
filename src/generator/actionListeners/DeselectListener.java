@@ -14,8 +14,8 @@ public class DeselectListener implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        ListObj lstSelected = app.getLstSelected();
-        ListObj lstPossible = app.getLstPossible();
+        ListObj<String> lstSelected = app.getLstSelected();
+        ListObj<String> lstPossible = app.getLstPossible();
         if(lstSelected.isSelected()) {
             String item = lstSelected.getSelected();
             lstSelected.remove(item);
