@@ -24,8 +24,8 @@ public class App extends JFrame {
     private CommandLineMain funcs = new CommandLineMain();
     private int width;
     private int height;
-    private ListObj<String> lstPossible;
-    private ListObj<String> lstSelected;
+    private ListObj<Country> lstPossible;
+    private ListObj<Country> lstSelected;
     private TextField txtCityNum;
     private TextArea txaOutput;
 
@@ -80,9 +80,11 @@ public class App extends JFrame {
         try {
             countryCodeHash = Global.importCountryCodeHash();
         } catch(IOException e) {e.printStackTrace();System.exit(-1);}
-        ArrayList<String> items = new ArrayList<>();
-        items.addAll(countryCodeHash.values());
-        lstPossible.setDataList(items);
+        ArrayList<Country> countries = new ArrayList<>();
+        for(String countryCode : countryCodeHash.keySet()) {
+            countries.add(new Country(this,countryCode,countryCodeHash.get(countryCode)));
+        }
+        lstPossible.setDataList(countries);
         // -----------------------------------------------------------------------
 
         btnSelect.addActionListener(new SelectListener(this));
