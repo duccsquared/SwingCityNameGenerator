@@ -5,8 +5,10 @@ import components.Button;
 import components.Label;
 import components.TextArea;
 import components.TextField;
+import generator.CommandLineMain;
 import generator.Global;
 import generator.actionListeners.DeselectListener;
+import generator.actionListeners.GenerateListener;
 import generator.actionListeners.SelectListener;
 
 import javax.swing.*;
@@ -19,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class App extends JFrame {
+    private CommandLineMain funcs = new CommandLineMain();
     private int width;
     private int height;
     private ListObj lstPossible;
@@ -30,6 +33,7 @@ public class App extends JFrame {
     public ListObj getLstSelected() {return lstSelected;}
     public TextField getTxtCityNum() {return txtCityNum;}
     public TextArea getTxaOutput() {return txaOutput;}
+    public CommandLineMain getFuncs() {return funcs;}
 
     @Override
     public int getWidth() {return width;}
@@ -65,11 +69,10 @@ public class App extends JFrame {
         Button btnDeselect = new Button(this,"<<<<<",250,310,350,330);
 
         Label lblCityNum = new Label(this,"Number of cities",Label.RIGHT,50,450,200,470);
-        txtCityNum = new TextField(this,"10",220,450, 280,470);
+        txtCityNum = new TextField(this,"5",220,450, 280,470);
         Button btnGenerate = new Button(this,"Generate",180,500,280,520);
 
         txaOutput = new TextArea(this, "",300,420,550,550);
-
         this.showApp();
 
         // -----------------------------------------------------------------------
@@ -84,6 +87,7 @@ public class App extends JFrame {
 
         btnSelect.addActionListener(new SelectListener(this));
         btnDeselect.addActionListener(new DeselectListener(this));
+        btnGenerate.addActionListener(new GenerateListener(this));
 
     }
     private void showApp() {

@@ -5,6 +5,7 @@ import main.App;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class DeselectListener implements ActionListener {
     private App app;
@@ -19,6 +20,11 @@ public class DeselectListener implements ActionListener {
             String item = lstSelected.getSelected();
             lstSelected.remove(item);
             lstPossible.add(item);
+            try {
+                app.getFuncs().removeCountry(item);
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
         }
     }
 }

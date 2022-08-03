@@ -36,10 +36,10 @@ public class CommandLineMain {
                     this.viewCountries();
                     break;
                 case 'p':
-                    this.generateCity();
+                    this.generateAndPrintCity();
                     break;
                 case 'q':
-                    this.generateCities();
+                    this.generateAndPrintCities();
                     break;
                 case 'x':
                     System.out.println("Exiting application!");
@@ -81,8 +81,7 @@ public class CommandLineMain {
         System.out.print(prompt + ": ");
         return scanner.nextInt();
     }
-    public void addCountry() throws IOException {
-        String country = this.getStringOption("enter country code / country");
+    public String[] parseCountry(String country) throws IOException {
         String countryName = null;
         String countryCode = null;
         if(CountryMarkov.isValidCountryCode(country)) {
@@ -100,8 +99,19 @@ public class CommandLineMain {
         }
         else {
             System.out.println("Invalid input!");
-            return;
+            return null;
         }
+        return new String[] {countryCode,countryName};
+    }
+    public void addCountry() throws IOException {
+        String country = this.getStringOption("enter country code / country");
+        addCountry(country);
+    }
+    public void addCountry(String country) throws IOException {
+        String[] countryCodeName = parseCountry(country);
+        if(countryCodeName!=null) {addCountry(countryCodeName[0],countryCodeName[1]);}
+    }
+    public void addCountry(String countryCode, String countryName) throws IOException {
         String fileName = String.format("markovData/%s.json",countryCode);
         CountryMarkov markov = (CountryMarkov) Global.importJson(CountryMarkov.class,fileName);
         this.countryMarkovArray.add(markov);
@@ -110,25 +120,13 @@ public class CommandLineMain {
     }
     public void removeCountry() throws IOException {
         String country = this.getStringOption("enter country code / country");
-        String countryName = null;
-        String countryCode = null;
-        if(CountryMarkov.isValidCountryCode(country)) {
-            countryCode = country;
-            countryName = CountryMarkov.getCountryCodeHash().get(country);
-        }
-        else if(CountryMarkov.isValidCountryName(country)) {
-            countryName = country;
-            for(String key : CountryMarkov.getCountryCodeHash().keySet()) {
-                if(CountryMarkov.getCountryCodeHash().get(key).equals(country)) {
-                    countryCode = key;
-                    break;
-                }
-            }
-        }
-        else {
-            System.out.println("Invalid input!");
-            return;
-        }
+        removeCountry(country);
+    }
+    public void removeCountry(String country) throws IOException {
+        String[] countryCodeName = parseCountry(country);
+        if(countryCodeName!=null) {removeCountry(countryCodeName[0],countryCodeName[1]);}
+    }
+    public void removeCountry(String countryCode, String countryName) throws IOException {
         for (CountryMarkov countryMarkov : this.countryMarkovArray) {
             if(countryMarkov.getCountryCode().equals(countryCode)) {
                 this.countryMarkovArray.remove(countryMarkov);
@@ -148,14 +146,17 @@ public class CommandLineMain {
             System.out.println(entry);
         }
     }
-    public void generateCity() throws IOException {
+    public String generateCity() throws IOException {
         if(!updated) {
             this.updateMainCountryMarkov();
             updated = true;
         }
-        System.out.println(this.mainCountryMarkov.genMarkovTextUnique());
+        return  this.mainCountryMarkov.genMarkovTextUnique();
     }
-    public void generateCities() throws IOException {
+    public void generateAndPrintCity() throws IOException {
+        System.out.println(generateCity());
+    }
+    public void generateAndPrintCities() throws IOException {
         if(!updated) {
             this.updateMainCountryMarkov();
             updated = true;

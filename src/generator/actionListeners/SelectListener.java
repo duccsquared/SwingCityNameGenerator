@@ -5,6 +5,7 @@ import main.App;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class SelectListener implements ActionListener {
     private App app;
@@ -19,6 +20,11 @@ public class SelectListener implements ActionListener {
             String item = lstPossible.getSelected();
             lstPossible.remove(item);
             lstSelected.add(item);
+            try {
+                app.getFuncs().addCountry(item);
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
         }
 
     }
