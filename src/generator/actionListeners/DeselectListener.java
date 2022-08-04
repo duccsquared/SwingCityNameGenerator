@@ -3,6 +3,7 @@ package generator.actionListeners;
 import components.ListObj;
 import main.App;
 import main.Country;
+import main.CountryListObj;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,8 +16,8 @@ public class DeselectListener implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        ListObj<Country> lstSelected = app.getLstSelected();
-        ListObj<Country> lstPossible = app.getLstPossible();
+        CountryListObj lstSelected = app.getLstSelected();
+        CountryListObj lstPossible = app.getLstPossible();
         if(lstSelected.isSelected()) {
             Country item = lstSelected.getSelected();
             lstSelected.remove(item);

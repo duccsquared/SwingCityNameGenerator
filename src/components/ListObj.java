@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class ListObj<T> extends JList<T> {
-    ArrayList<T> dataList = new ArrayList<>();
+    protected ArrayList<T> dataList = new ArrayList<>();
     public ListObj(App app, T[] listData, double x1, double y1, double x2, double y2) {
         super(listData);
         for(T item: listData) {
@@ -40,7 +40,7 @@ public class ListObj<T> extends JList<T> {
     public boolean isSelected() {
         return this.getSelectedIndex()!=-1;
     }
-    private void updateComponent() {
+    protected void updateComponent() {
         this.setListData((T[]) dataList.toArray(new Object[0]));
     }
 }
