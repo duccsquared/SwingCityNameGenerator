@@ -15,6 +15,6 @@ public class Country {
     public void setCountryName(String countryName) {this.countryName = countryName;}
 
     public String toString() {
-        return String.format("%s|%s",countryCode,countryName);
+        return String.format("%s|%s (%d)",countryCode,countryName,app.getDataSizeHash().get(countryCode));
     }
 }

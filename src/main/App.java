@@ -33,6 +33,7 @@ public class App extends JFrame {
     private TextArea txaOutput;
     private TextField txtFilterPossible;
     private TextField txtFilterSelected;
+    private HashMap<String,Integer> dataSizeHash;
 
     public CountryListObj getLstPossible() {return lstPossible;}
     public CountryListObj getLstSelected() {return lstSelected;}
@@ -40,13 +41,15 @@ public class App extends JFrame {
     public TextArea getTxaOutput() {return txaOutput;}
     public CommandLineMain getFuncs() {return funcs;}
 
+    public HashMap<String, Integer> getDataSizeHash() {return dataSizeHash;}
+
     @Override
     public int getWidth() {return width;}
     @Override
     public int getHeight() {return height;}
 
 
-    public App(String title, int width, int height) {
+    public App(String title, int width, int height) throws IOException {
         super(title);
         this.width = width+16;
         this.height = height+39;
@@ -59,7 +62,9 @@ public class App extends JFrame {
         this.start();
     }
 
-    private void start() {
+    private void start() throws IOException {
+        dataSizeHash = Global.importDataSizeHash();
+
         Label lblTitle = new Label(this,"City Name Generator",0,20,20,580,80);
         lblTitle.setFont(new Font(Font.SERIF, Font.PLAIN,  40));
         Label lblPossible = new Label(this,"Possible Countries",0,20,100,220,120);

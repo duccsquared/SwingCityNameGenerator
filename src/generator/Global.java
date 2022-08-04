@@ -41,4 +41,16 @@ public class Global {
         }
         return countryCodeHash;
     }
+
+    public static HashMap<String,Integer> importDataSizeHash() throws IOException {
+        ArrayList<String> dataArray = Global.importFile("countryCodeData.txt");
+        HashMap<String,Integer> dataSizeHash = new HashMap<>();
+        for(String data : dataArray) {
+            String[] tokenizedData = data.split(" ");
+            String key = tokenizedData[0];
+            int dataSize = Integer.parseInt(tokenizedData[tokenizedData.length-1]);
+            dataSizeHash.put(key,dataSize);
+        }
+        return dataSizeHash;
+    }
 }
